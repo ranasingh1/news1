@@ -1,4 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap');
+ html {
+    scroll-behavior: smooth;
+  }
 body{
     background-color: #EAEFF2 !important;
 }
@@ -12,8 +15,53 @@ body{
     background-color: #00308F;
 }
 
+.popup{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDB750;
+    width: 20vw;
+    height: 28vw;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none;
+    text-align: center;
+    z-index: 99;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #00E0D4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0;
+    color: #0f72e5;
+    line-height: 25px;
+}
+.popup a{
+    display: block;
+    width: 10vw;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color:#EAEFF2;
+    color:#00E0D4;
+    text-decoration: none;
+    padding: 5px 0;
+    cursor: pointer;
+}
 
 .topbar {
+    background-color:#EAEFF2;
     color:#00308F;
     font-family: 'Newsreader', serif;
     display: inline-flexbox;
@@ -32,7 +80,9 @@ body{
     height: 5vw;
     
 }
-
+#top{
+    z-index: 99;
+}
 .navigation {
     display: flex;
     background-color:#444;
@@ -62,7 +112,11 @@ body{
     }
 
 }
-
+.sticky{
+position: fixed;
+top: 0;
+width: 100%;
+}
 .search-bar {
     display: inline-block justify-content: center;
     width: 60px;
@@ -171,7 +225,7 @@ body{
 }
 .section-1{
     font-family: 'Montserrat', sans-serif;
-    display: flex;
+    display: inline-flex;
 }
 .section-1 h6{
     font-weight: 600;
@@ -298,6 +352,75 @@ body{
     margin-top: 2vw;
     font-size: 1vw;
 }
+
+.live-container {
+position: relative;
+min-height: 100vh;
+}
+.live-container h1{
+    font-family: 'Montserrat', sans-serif;
+color: #111;
+text-align: center;
+padding: 15px;
+font-size: 40px;
+font-weight: normal;
+}
+.live-container .video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: center;
+    padding: 10px;
+}
+.live-container .video-container .video{
+    height: 250px;
+    width: 350px;
+    border: 5px solid #EAEFF2;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 7);
+    cursor: pointer;
+    overflow: hidden;
+}
+.live-container .video-container .video iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.live-container .video-container .video:hover iframe{
+    transform: scale(1.1);
+}
+.live-container .popup-video{
+    position: fixed;
+    top:0; left:0;
+    z-index: 100;
+    background: rgba(0,0,0,8);
+
+    display: none;
+}
+.live-container .popup-video iframe{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate (-50%, -50%);
+    width:750px;
+    border-radius: 5px;
+    border:3px solid #fff;
+    object-fit: cover;
+}
+.live-container .popup-video span{
+   position: absolute;
+   top:5px; right:20px;
+   font-size: 50px;
+    color:#fff;
+   font-weight: bolder;
+   z-index: 100;
+   cursor: pointer;
+}
+@media (max-width:768px){
+    .live-container .popup-video iframe{
+       width:95%;
+    }
+}
 /* .finance, .trending, .world{
     margin: 10vw 8vw 2vw 12vw;
 
@@ -373,12 +496,11 @@ body{
 .box6 .title,.box6 img,.box6:after{transition:all .35s ease 0s}
 @media only screen and (max-width:990px){.box{margin-bottom:0px}
 }
+
 #footer{
-    background-color: #00308F;
-    
-    
+    background-color: #00308F;  
 }
- #footer li{
+#footer li{
     list-style-type: none;
  }
  #footer a{
@@ -417,4 +539,30 @@ body{
 }
 .bottom-band{
     background-color: #111;
+}
+.breadcrumb{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 2vw 2vw 0 7.8vw;
+    
+}
+.breadcrumb-class a{
+    text-decoration: none;
+    color: #111;
+}
+.heading h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+
+.article-image img{
+    margin: 0 0 2vw 8vw ;
+    height: 30vw;
+    width: 40vw;
+}
+.article-smalltxt{
+    font-family: 'Montserrat', sans-serif;
+
 }

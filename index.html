@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a clone news channel made with seo kept in my mind">
+    <meta name="description" content="Here you can read trending news, hot news and breaking news, also fianncial news about crypto and share market">
+    <meta name="keywords" content="The India, News, Hindi news, English news, Crypto, bitcoin, finance, india,Latest news in hindi, live news, ipl, cricket, virat kohli, revenue, share, Microstrategy, hodl">
     <title>The India</title>
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -26,6 +29,16 @@
 </head>
 
 <body>
+    <div class="d-none d-lg-block">
+    <div class="popup ">
+        <button id="close">&times;</button>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+            Get information about recent events in your mail. 
+        </p>
+        <a>Subscribe</a>
+    </div>
+</div>
     <div class="container-fluid">
         <div class="row top-band d-lg-flex   d-none d-lg-block">
           <div class="col-6">
@@ -39,6 +52,8 @@
        
       </div> 
     </div>  
+    <!-- top  -->
+    <section id="top">
     <!-- topbar -->
     <div class="topbar">
 
@@ -50,7 +65,7 @@
 
     <!-- navigation -->
     <div class="navigation">
-        <nav class="navbar  navbar-expand-lg">
+        <nav class="navbar  navbar-expand-lg sticky">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +75,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Politics</a>
@@ -83,7 +98,7 @@
 
 
         <div class="search-bar">
-            <form action="/search" method="get">
+            <form action="/search" method="">
                 <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
                 <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
             </form>
@@ -104,22 +119,24 @@
         </div>
 
     </div>
+</section>
+<!-- top-end  -->
     <!-- navigation-end -->
     <!-- section-1 -->
     <div class="section-1">
         <div class="big-story">
             <div class="bs-img">
                 <h5>Big Story</h5>
-                <a href=""><img src="assets/img/news2.png" alt=""></a>
-                <a href="">
+                <a href="news2.html"><img src="assets/img/news2.png" alt=""></a>
+                <a href="news2.html">
                     <h6>Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget</h6>
                 </a>
             </div>
         </div>
         <div class="thumbnail">
             <div class="thumb-img">
-                <a href=""><img src="assets/img/news1.png" alt="" srcset=""></a>
-                <a href="">
+                <a href="news1.html"><img src="assets/img/news1.png" alt="" srcset=""></a>
+                <a href="news1.html">
                     <h6>PayPal enables transfer of digital currencies to external wallets</h6>
                 </a>
             </div>
@@ -129,43 +146,43 @@
             <ul>
                 <li>
                     <div class="nl-thumbnail">
-                        <a href=""><img src="assets/img/news1.png" alt=""></a>
+                        <a href="news1.html"><img src="assets/img/news1.png" alt=""></a>
                     </div>
-                    <a href="">
+                    <a href="news1.html">
                         <h2>PayPal enables transfer of digital currencies to external wallets</h2>
                     </a>
                 </li>
                 <li>
                     <div class="nl-thumbnail">
-                        <a href=""><img src="assets/img/news2.png" alt=""></a>
+                        <a href="news2.html"><img src="assets/img/news2.png" alt=""></a>
                     </div>
-                    <a href="">
+                    <a href="news2.html">
                         <h2>Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget</h2>
                     </a>
                 </li>
                 <li>
                     <div class="nl-thumbnail">
-                        <a href=""><img src="assets/img/news3.png" alt=""></a>
+                        <a href="news3.html"><img src="assets/img/news3.png" alt=""></a>
                     </div>
-                    <a href="">
+                    <a href="news3.html">
                         <h2>Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC</h2>
                     </a>
 
                 </li>
                 <li>
                     <div class="nl-thumbnail">
-                        <a href=""><img src="assets/img/news4.png" alt=""></a>
+                        <a href="news4.html"><img src="assets/img/news4.png" alt=""></a>
                     </div>
-                    <a href="">
+                    <a href="news4.html">
                         <h2>Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
                         </h2>
                     </a>
                 </li>
                 <li>
                     <div class="nl-thumbnail">
-                        <a href=""><img src="assets/img/news5.png" alt=""></a>
+                        <a href="news5.html"><img src="assets/img/news5.png" alt=""></a>
                     </div>
-                    <a href="">
+                    <a href="news5.html">
                         <h2>Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</h2>
                     </a>
                 </li>
@@ -181,7 +198,7 @@
                             <h1>PayPal enables transfer of digital currencies to external wallets</h1>
                             <p>The move comes after nearly two years since Payed users to buy and sell crypto on its
                                 platform.After rolling out the ability to buy and sell crypto on its platform in <a
-                                    href="">read more..</a> </p>
+                                    href="news1.html">read more..</a> </p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -189,7 +206,7 @@
                         <div class="carousel-caption">
                             <h1>Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget</h1>
                             <p>Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring
-                                crypto for tax purposes.Crypto traders in Italy will be <a href="">read more..</a></p>
+                                crypto for tax purposes.Crypto traders in Italy will be <a href="news2.html">read more..</a></p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -197,7 +214,7 @@
                         <div class="carousel-caption ">
                             <h1> Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC</h1>
                             <p>Microstrategy is now holding approximately 132,500 bitcoin following its most recent
-                                purchases. This year, the world’s largest cryptocurrency has emerged as <a href="">read
+                                purchases. This year, the world’s largest cryptocurrency has emerged as <a href="news3.html">read
                                     more..</a></p>
                         </div>
                     </div>
@@ -214,9 +231,25 @@
         </div>
 
     </div>
-    
    <div class="section-1-bg">
    </div>
+   <div class="live-container">
+    <h1>Live TV</h1>
+    <div class="video-container">
+    <div class="video"><iframe allow="autoplay; fullscreen;" allowfullscreen src="https://feeds.intoday.in/livetv/ver-3-0/?id=livetv-at&aud_togle=1&autostart=1&utm_medium=web&utm_source=homepage&v=1.5&debug=false&dimlight=1" ></iframe></div>
+    <div class="video"><iframe allow="autoplay; fullscreen;" allowfullscreen src="https://feeds.intoday.in/livetv/ver-3-0/?id=livetv-gnt&aud_togle=1&autostart=1&mute=1&t_src=live_tv_page&t_med=web&utm_medium=web&utm_source=live_tv_page&dimlight=1&ver=3.0&noads=0" ></iframe></div>
+    <div class="video"><iframe allow="fullscreen;" allowfullscreen  src="https://feeds.intoday.in/livetv/ver-3-0/?id=livetv-atprime&autostart=1&utm_medium=web&utm_source=livetvpage&v=1.5&noads=0" frameborder="0"></iframe></div>
+    <div class="video"><iframe allow="autoplay; fullscreen;" allowfullscreen  src="https://feeds.intoday.in/livetv/ver-3-0/?id=livetv-it&aud_togle=1&autostart=1&mute=1&t_src=live_tv_page&t_med=web&utm_medium=web&utm_source=live_tv_page&dimlight=1&ver=3.0&debug=false&noads=0" frameborder="0"></iframe></video></div>
+    <div class="video"><iframe allow=" fullscreen;" allowfullscreen  src="https://feeds.intoday.in/livetv/ver-3-0/?id=livetv-atprime&autostart=1&utm_medium=web&utm_source=livetvpage&v=1.5&noads=0" frameborder="0"></iframe></div>
+    <div class="video"><iframe allow="autoplay; fullscreen;" allowfullscreen  src="https://feeds.intoday.in/livetv/ver-3-0/?id=livetv-it&aud_togle=1&autostart=1&mute=1&t_src=live_tv_page&t_med=web&utm_medium=web&utm_source=live_tv_page&dimlight=1&ver=3.0&debug=false&noads=0" frameborder="0"></iframe></video></div>
+</div>
+<div class="popup-video">
+    <span>&times;</span>
+    <iframe allow="autoplay; fullscreen;" allowfullscreen  src="https://feeds.intoday.in/livetv/ver-3-0/?id=livetv-at&aud_togle=1&autostart=1&utm_medium=web&utm_source=homepage&v=1.5&debug=false&dimlight=1" muted autoplay controls ></iframe>
+</div>
+
+</div>
+
    <div class="content">
   <div class="Trending">
     <h5>Trending</h5>
@@ -226,7 +259,7 @@
                 <div>
                     <img src="assets/img/news1.png" alt="">
                 </div>
-                <h6><a href="">PayPal enables transfer of digital currencies to external wallets</a> </h6>
+                <h6><a href="news1.html">PayPal enables transfer of digital currencies to external wallets</a> </h6>
             </div>
         </div>
         <div class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6" >
@@ -234,7 +267,7 @@
                 <div>
                     <img src="assets/img/news2.png" alt="">
                 </div>
-                <h6><a href="">Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</a> </h6>
+                <h6><a href="news2.html">Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</a> </h6>
             </div>
 
         </div>
@@ -243,7 +276,7 @@
                 <div>
                     <img src="assets/img/news3.png" alt="">
                 </div>
-                <h6><a href="">Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
+                <h6><a href="news3.html">Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
                 </a> </h6>
             </div>
 
@@ -253,7 +286,7 @@
                 <div>
                     <img src="assets/img/news4.png" alt="">
                 </div>
-                <h6><a href="">Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
+                <h6><a href="news4.html">Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
                 </a> </h6>
             </div>
 
@@ -269,7 +302,7 @@
                 <div>
                     <img src="assets/img/news1.png" alt="">
                 </div>
-                <h6><a href="">PayPal enables transfer of digital currencies to external wallets</a> </h6>
+                <h6><a href="news1.html">PayPal enables transfer of digital currencies to external wallets</a> </h6>
             </div>
         </div>
         <div class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6" >
@@ -277,7 +310,7 @@
                 <div>
                     <img src="assets/img/news2.png" alt="">
                 </div>
-                <h6><a href="">Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</a> </h6>
+                <h6><a href="news2.html">Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</a> </h6>
             </div>
 
         </div>
@@ -286,7 +319,7 @@
                 <div>
                     <img src="assets/img/news3.png" alt="">
                 </div>
-                <h6><a href="">Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
+                <h6><a href="news3.html">Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
                 </a> </h6>
             </div>
 
@@ -296,7 +329,7 @@
                 <div>
                     <img src="assets/img/news4.png" alt="">
                 </div>
-                <h6><a href="">Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
+                <h6><a href="news4.html">Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
                 </a> </h6>
             </div>
 
@@ -311,7 +344,7 @@
                 <div>
                     <img src="assets/img/news1.png" alt="">
                 </div>
-                <h6><a href="">PayPal enables transfer of digital currencies to external wallets</a> </h6>
+                <h6><a href="news1.html">PayPal enables transfer of digital currencies to external wallets</a> </h6>
             </div>
         </div>
         <div class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6" >
@@ -319,7 +352,7 @@
                 <div>
                     <img src="assets/img/news2.png" alt="">
                 </div>
-                <h6><a href="">Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</a> </h6>
+                <h6><a href="news2.html">Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</a> </h6>
             </div>
 
         </div>
@@ -328,7 +361,7 @@
                 <div>
                     <img src="assets/img/news3.png" alt="">
                 </div>
-                <h6><a href="">Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
+                <h6><a href="news3.html">Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
                 </a> </h6>
             </div>
 
@@ -338,7 +371,7 @@
                 <div>
                     <img src="assets/img/news4.png" alt="">
                 </div>
-                <h6><a href="">Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
+                <h6><a href="news4.html">Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
                 </a> </h6>
             </div>
 
@@ -353,7 +386,7 @@
                 <div>
                     <img src="assets/img/news1.png" alt="">
                 </div>
-                <h6><a href="">PayPal enables transfer of digital currencies to external wallets</a> </h6>
+                <h6><a href="news1.html">PayPal enables transfer of digital currencies to external wallets</a> </h6>
             </div>
         </div>
         <div class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6" >
@@ -361,7 +394,7 @@
                 <div>
                     <img src="assets/img/news2.png" alt="">
                 </div>
-                <h6><a href="">Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</a> </h6>
+                <h6><a href="news2.html">Prime Minister Giorgia Meloni's new bill also includes an incentive for those declaring crypto for tax purposes.</a> </h6>
             </div>
 
         </div>
@@ -370,7 +403,7 @@
                 <div>
                     <img src="assets/img/news3.png" alt="">
                 </div>
-                <h6><a href="">Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
+                <h6><a href="news3.html">Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
                 </a> </h6>
             </div>
 
@@ -380,7 +413,7 @@
                 <div>
                     <img src="assets/img/news4.png" alt="">
                 </div>
-                <h6><a href="">Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
+                <h6><a href="news4.html">Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
                 </a> </h6>
             </div>
 
@@ -503,6 +536,7 @@
      
    </div>
 </div> -->
+
 <footer id="footer">
     <div class="row g-0 gx-sm-0">
         <div class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6">
